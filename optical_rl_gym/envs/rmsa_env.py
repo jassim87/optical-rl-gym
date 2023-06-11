@@ -71,7 +71,7 @@ class RMSAEnv(OpticalNetworkEnv):
 
         # specific attributes for elastic optical networks
         self.bit_rate_requested = 0
-        self.bit_rate_provisioned = 0
+        self.bit_rate_provisioned = 0   # bit rate actually provided by the network in response to a request.
         self.episode_bit_rate_requested = 0
         self.episode_bit_rate_provisioned = 0
 
