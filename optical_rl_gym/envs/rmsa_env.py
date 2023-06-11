@@ -84,7 +84,7 @@ class RMSAEnv(OpticalNetworkEnv):
             # creating a partial function for the bit rate continuous selection
             self.bit_rate_function = functools.partial(
                 self.rng.randint, self.bit_rate_lower_bound, self.bit_rate_higher_bound
-            )
+            )  #The term "partial" in functools.partial comes from the idea of "partial application" of functions, a concept from functional programming. Partial application means taking a function that takes multiple arguments and fixing some of those arguments to create a new function that takes fewer arguments
         elif self.bit_rate_selection == "discrete":
             if bit_rate_probabilities is None:
                 bit_rate_probabilities = [
